@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EmoTea - Produk Teh Berkualitas</title>
+    <style>
+        /* Reset dan styling dasar */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8f0;
+            color: #333;
+        }
+        header {
+            background-color: #00612d;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        header img {
+            height: 50px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        main {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+        .product-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 15px 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .product-info h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.2rem;
+            color: #6b4f4f;
+        }
+        .product-info p {
+            margin: 0 0 15px 0;
+            font-size: 0.95rem;
+            color: #555;
+            flex-grow: 1;
+        }
+        .product-info .price {
+            font-weight: 700;
+            color: #b85c38;
+            font-size: 1.1rem;
+        }
+        section.contact, section.feedback {
+            background-color: #f7e9e3;
+            padding: 30px 20px;
+            border-radius: 8px;
+            max-width: 800px;
+            margin: 0 auto 50px auto;
+            box-shadow: 0 2px 10px rgb(0 0 0 / 0.05);
+        }
+        section.contact h2, section.feedback h2 {
+            color: #6b4f4f;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+            text-align: center;
+        }
+        .contact-info {
+            text-align: center;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #4a3a3a;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        form label {
+            font-weight: 600;
+            color: #6b4f4f;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            padding: 10px;
+            border: 1.5px solid #b85c38;
+            border-radius: 5px;
+            font-size: 1rem;
+            resize: vertical;
+        }
+        form textarea {
+            min-height: 100px;
+        }
+        form button {
+            background-color: #6b4f4f;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        form button:hover {
+            background-color: #b85c38;
+        }
+        footer {
+            text-align: center;
+            padding: 15px 10px;
+            background-color: #00612d;
+            background-color: ;
+            color: white;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 480px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+            .product-card img {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="foto/WhatsApp_Image_2025-09-18_at_21.50.23-removebg-preview.png" alt="Logo Toa Tea" />
+        <h1>EmoTea - Teh Berkualitas Indonesia</h1>
+    </header>
+
+    <main>
+    <section class="tea-explanation" aria-label="Penjelasan tentang Tea" style="max-width: 800px; margin: 0 auto 40px auto; padding: 0 20px; color: #4a3a3a;">
+        <h2 style="color: #6b4f4f; text-align: center; margin-bottom: 15px;">Apa itu EmoTea?</h2>
+        <p style="font-size: 1.1rem; line-height: 1.6; text-align: center;">
+            EmoTea atau Emotion Tea adalah ide bisnis yang kami buat sebagaimana namanya, yaitu teh sesuai emosi atau mood kita. Banyak masyarakat Indonesia menyukai teh, dan tidak sedikit juga yang meminumnya ketika sedang berada dalam kondisi tertentu seperti saat sedih, marah, maupun senang.
+        </p>
+    </section>
+
+    <section class="products" aria-label="Produk EmoTea">
+        <!-- produk di sini -->
+    </section>
+    <!-- bagian lain -->
+</main>
+
+    <main>
+        <section class="products" aria-label="Produk Toa Tea">
+            <article class="product-card">
+                <img src="foto/WhatsApp Image 2025-09-19 at 22.20.36 (2).jpeg" alt="Focus Tea" />
+                <div class="product-info">
+                    <h3>Focus Tea</h3>
+                    <p>Ada kafein ringan yang bikin lebih fokus, Aroma segar yang bisa bikin otak lebih fokus dan semangat dan Cocok diminum pagi atau sebelum belajar/bekerja</p>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="foto/WhatsApp Image 2025-09-19 at 22.20.36 (1).jpeg" alt="Chill Tea" />
+                <div class="product-info">
+                    <h3>Chill Tea</h3>
+                    <p>Terkenal sebagai penenang alami yg membuat badan lebih rileks, Wanginya lembut, bisa bikin stres berkurang, Manis alami dan (Cocok diminum malam hari sebelum tidur atau saat lagi butuh ketenangan)</p>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="foto/WhatsApp Image 2025-09-19 at 22.20.36.jpeg" alt="Happy Tea" />
+                <div class="product-info">
+                    <h3>Happy Tea</h3>
+                    <p>Ada kafein yang bikin badan lebih bertenaga, Rasanya yg segar bikin suasana hati lebih cerah, Rasa hangat manis yang bikin mood naik dan Cocok diminum siang hari biar lebih ceria & bersemangat</p>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="foto/WhatsApp Image 2025-09-19 at 22.20.37.jpeg" alt="Sad Tea" />
+                <div class="product-info">
+                    <h3>Sad Tea</h3>
+                    <p>Bagus buat jaga mood, Hangat di badan yg dapat menjadi penenang, Manis alami dan Cocok diminum saat lagi down, capek, atau butuh comfort drink</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="contact" aria-label="Kontak Kami">
+            <h2>Kontak Kami</h2>
+            <div class="contact-info">
+                <p>Alamat: Airlangga, Surabaya, Indonesia</p>
+                <p>Telepon: +62 851 6863 1657</p>
+                <p>Email: info@emottea.co.id</p>
+                <p>Instagram: <a href="https://www.instagram.com/emotteaa?igsh=anAyeW9lbTk2ZDhz" target="_blank" rel="noopener" style="color:#b85c38;">@emotteaa</a></p>
+            </div>
+        </section>
+
+        <section class="feedback" aria-label="Saran dan Pesan">
+    <h2>Saran dan Pesan</h2>
+    <form 
+        action="https://formspree.io/f/xpwjgnwg" 
+        method="POST"
+        id="feedbackForm"
+    >
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="_replyto" placeholder="Masukkan email Anda" required />
+
+        <label for="message">Pesan:</label>
+        <textarea id="message" name="message" placeholder="Tulis saran atau pesan Anda di sini..." required></textarea>
+
+        <button type="submit">Kirim</button>
+    </form>
+</section>
+    </main>
+
+    <footer>
+        &copy; 2025 EMOTEA. Semua hak cipta dilindungi.
+    </footer>
+
+    <script>
+        // Contoh sederhana untuk menangani submit form saran dan pesan
+        document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Terima kasih atas saran dan pesan Anda!');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
